@@ -1,4 +1,5 @@
 import { BALANCES } from '../../constants/endpoints'
+
 export default async (_, res) => {
     
     const response = await fetch(BALANCES, {

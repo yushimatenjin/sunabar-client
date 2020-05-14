@@ -1,4 +1,5 @@
 import { TRANSACTIONS } from '../../constants/endpoints'
+
 export default async (_, res) => {
     
     const response = await fetch(`${TRANSACTIONS}?fromDate=2018-05-01&accountId=${process.env.accountId}`, {
