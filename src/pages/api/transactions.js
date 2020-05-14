@@ -1,9 +1,4 @@
 import { TRANSACTIONS } from '../../constants/endpoints'
-import Cors from 'cors'
-const cors = Cors({
-    methods: ['GET', 'HEAD'],
-  })
-  
 export default async (_, res) => {
     
     const response = await fetch(`${TRANSACTIONS}?fromDate=2018-05-01&accountId=${process.env.accountId}`, {
